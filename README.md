@@ -179,7 +179,7 @@ Make sure you have installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/mdyasin0/artifacts-server-side.git
+git clone https://github.com/mdyasin0/legacy-vault-server-side.git
 ```
 
 ### 2. Navigate to the Project Directory
