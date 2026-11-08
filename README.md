@@ -1,4 +1,4 @@
-# 🏺 Historical Artifacts Tracker — Server
+# 🏺 Legacy Vault — Server
 
 A RESTful backend service powering the Historical Artifacts Tracker application. This server handles artifact management, user authentication, authorization, database operations, user interactions, and historical data processing.
 
@@ -8,12 +8,12 @@ Built with **Node.js, Express.js, and MongoDB**, the backend provides the core f
 
 ## 🌐 Project Information
 
-- **Project:** Historical Artifacts Tracker
+- **Project:** Legacy Vault
 - **Repository:** Server-Side Application
 - **Backend Runtime:** Node.js
 - **Framework:** Express.js
 - **Database:** MongoDB Atlas
-- **Deployment Platform:** Vercel
+- **Deployment Platform:** render
 
 ---
 
@@ -38,12 +38,10 @@ The primary goal is to provide a structured, secure, and maintainable backend fo
 - Add new historical artifacts.
 - Update existing artifact information.
 - Delete historical artifacts.
-- Search artifacts by name.
 - Retrieve featured artifacts based on like counts.
 
 ### 2. Authentication & Authorization
 
-- Integration with Firebase Authentication.
 - JWT-based authentication flow.
 - Generate JSON Web Tokens for authenticated users.
 - Validate JWT tokens for protected operations.
@@ -94,11 +92,6 @@ The primary goal is to provide a structured, secure, and maintainable backend fo
 - Store and retrieve comments, likes, and comparison information.
 - Maintain application data across requests.
 
-### 9. Image Management Integration
-
-- Cloudinary integration for artifact image management.
-- Support image uploading from the application.
-- Utilize Cloudinary's image storage and optimization capabilities.
 
 ---
 
@@ -120,7 +113,7 @@ The primary goal is to provide a structured, secure, and maintainable backend fo
 
 ### Development Tools
 - **dotenv** – Environment variable management.
-- **Vercel** – Backend deployment platform.
+- **render** – Backend deployment platform.
 
 ---
 
@@ -186,7 +179,7 @@ Make sure you have installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_SERVER_REPOSITORY_URL
+git clone https://github.com/mdyasin0/artifacts-server-side.git
 ```
 
 ### 2. Navigate to the Project Directory
@@ -208,13 +201,13 @@ Create a `.env` file in the root directory.
 Example configuration:
 
 ```env
-PORT=5000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-CLIENT_URL=your_frontend_url
+PORT=
+USER=
+DB_PASS=
+JWT_ACCESS_SECRET=
 ```
 
-Use the exact environment variable names referenced in your server source code. The example above is illustrative, not a confirmation of your current configuration.
+
 
 Never commit your `.env` file or expose private credentials in a public repository.
 
@@ -242,9 +235,8 @@ The server will start on the configured port.
 
 The backend is deployed using **Vercel**.
 
-- **Backend Hosting:** Vercel
+- **Backend Hosting:** render
 - **Database Hosting:** MongoDB Atlas
-- **Image Management:** Cloudinary
 - **Authentication:** Firebase Authentication and JWT integration
 
 Environment variables should be configured securely in the deployment environment rather than committed to the repository.
@@ -255,7 +247,7 @@ Environment variables should be configured securely in the deployment environmen
 
 **Historical Artifacts Tracker — Live Website**
 
-https://assignment-11-1588b.web.app/
+https://assignment-11-1588b.web.app
 
 ---
 
@@ -273,8 +265,8 @@ Full-Stack Web Developer
 
 This backend project demonstrates practical experience in developing RESTful APIs, integrating databases, implementing authentication and authorization, managing user-generated content, and building data-driven application functionality.
 
-It represents hands-on work with Node.js, Express.js, MongoDB, JWT, Firebase Authentication, and Cloudinary in the development of a full-stack web application.
+It represents hands-on work with Node.js, Express.js, MongoDB, JWT, Firebase Authentication in the development of a full-stack web application.
 
 ---
 
-**Developed as part of the Historical Artifacts Tracker project.**
+**Developed as part of the Legacy Vault project.**
